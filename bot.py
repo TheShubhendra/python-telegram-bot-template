@@ -1,5 +1,6 @@
 """A template of telegram bot in Python."""
 import sys
+import logging
 from decouple import config
 from telegram.ext import (
     Updater,
@@ -15,6 +16,10 @@ APP_URL = config("APP_URL", None)
 """App url on deployment server like https://app-name.herokuapp.com/."""
 PORT = config("PORT", 5000)
 """PORT assigned by hosting server."""
+
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
+)
 
 
 def start(update, context):
