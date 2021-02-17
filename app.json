@@ -1,0 +1,13 @@
+{   "name": "Telgram bot",
+    "description": "A template for getting started with the telegram bit in python.",
+    "env":{
+        "TOKEN":{
+            "description": "TOKEN of bot, obtained by @BotFather on Telegram.",
+            "required": true
+        },
+        "APP_URL":{
+            "description": "Url of this bot app.",
+            "required": true
+        }
+    }
+}
